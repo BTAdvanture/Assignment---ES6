@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6</title>
+</head>
+
+<body>
+    <h2 id="demo"></h2>
+    <script>
+
+        function car(car1, car2) {
+            this.a = car1;
+            this.b = car2;
+        }
+        const vehicle = new car("Ford", "Mustang");
+        document.getElementById("demo").innerHTML =
+            "I have a " + vehicle.a + "," + " it is a " + vehicle.b + " ";
+    </script>
+</body>
+
+</html>
